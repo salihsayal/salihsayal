@@ -1,5 +1,5 @@
 # M. Salih Sayal
-**Linux & DevOps Engineer** · Duisburg, Germany  
+**Cloud & DevOps Engineer** · Duisburg, Germany  
 [LinkedIn](https://www.linkedin.com/in/muhammet-salih-sayal-327565206) · [Email](mailto:muhammet.salih.sayal@hotmail.com)
 
 Infrastructure and automation engineer focused on enterprise Linux environments, resilient container orchestration, and practical pipeline automation. Experienced in bare-metal hypervisors (Proxmox VE), stateless Kubernetes deployments (K3s, GitOps), and Python/Bash-driven systems integration.
