@@ -37,4 +37,5 @@ Containerized 3-stage ETL (Extract, Transform, Load) and reporting pipeline for 
 
 ---
 
-*Looking for operative roles in Platform Operations, Systems Engineering, and DevOps Automation.*
+*Looking for roles in Cloud & DevOps Engineering, Platform Infrastructure, and Automation.*
+📄 **[Download my full CV (PDF)](resume_msalihsayal.pdf)**
