@@ -1,0 +1,143 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{setspace}
+\setstretch{1.22} % Erhöhter Zeilenabstand für gleichmäßigen, harmonischen Textfluss
+
+% Customize hyperlink appearance
+\hypersetup{
+    colorlinks=true,    % Enable colored links
+    linkcolor=blue,     % Color for internal links
+    urlcolor=blue,      % Color for external links (URLs)
+    citecolor=blue      % Color for citations
+}
+
+% Set applicant's personal data for header (Public Version)
+\name{M. Salih Sayal}
+\address{Duisburg, Germany \linebreak muhammet.salih.sayal@hotmail.com}
+\contacts{github.com/\href{https://github.com/salihsayal}{salihsayal} \linebreak \href{https://www.linkedin.com/in/muhammet-salih-sayal-327565206}{LinkedIn Profile}}
+
+\begin{document}
+    
+    % Print the header
+    \makeheader
+    
+    % =========================================================================
+    % PAGE 1: EXPERIENCE & PROJECTS
+    % =========================================================================
+    
+    \begin{cvsection}{Experience}
+
+        \begin{cvsubsection}{IT Engineer Automation}{Everllence (formerly MAN ES)}{06/2025 -- 09/2026} 
+            \begin{itemize}
+                \item \textbf{Data Engineering \& ETL:} Developed a \textbf{Docker-based Python pipeline} to automate complex billing workflows (PostgreSQL) incl. \textbf{Active Directory (LDAP)} synchronization.
+                \item \textbf{Backend Development:} Designed and implemented a \textbf{REST API} using \textbf{Java Spring Boot} for seamless integration with \textbf{SAP systems}.
+                \item \textbf{System Integration:} Developed specialized \textbf{wrapper scripts} in Python to orchestrate intercommunication between heterogeneous software systems.
+                \item \textbf{Cloud Automation \& Reporting:} Operated workloads on \textbf{Microsoft Azure} (VMs, Entra ID) and automated data reporting via \textbf{Microsoft Graph API} (OAuth2) and Plotly.
+                \item \textbf{Disaster Recovery \& Scripting:} Implemented automated \textbf{backup/restore processes (SFTP/Rsync)} in Linux server environments and refactored \textbf{Bash scripts}.
+            \end{itemize}
+        \end{cvsubsection}
+        
+        \vspace{0.15cm}
+        
+        \begin{cvsubsection}{Software Engineer}{rola Security Solutions GmbH}{10/2023 -- 04/2025}
+            \begin{itemize}
+                \item \textbf{DevOps \& Troubleshooting:} Performed \textbf{error analysis} during system startup and automated configuration deployments in Linux environments.
+                \item \textbf{Data Engineering:} Developed \textbf{Java-based analysis tools} for the automated evaluation of complex system error logs.
+                \item \textbf{Software Quality Assurance:} Ensured high quality standards by maintaining \textbf{Checkstyle rules} and implementing \textbf{Sonar recommendations} (Clean Code).
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+
+    \vspace{0.2cm}
+
+    \begin{cvsection}{Selected Projects}
+        \begin{cvsubsection}{Infrastructure \& Cloud Project}{Jobentra}{07/2026 -- 08/2026}
+            \begin{itemize}
+                \item \textbf{Kubernetes Cluster \& GitOps:} Setup and administration of a stateless \textbf{3-node Kubernetes cluster} on Ubuntu Server for microservices, including \textbf{GitOps pipelines} via \textbf{ArgoCD}, Gitea, and CI/CD runners.
+                \item \textbf{Proxmox VE \& HA Architecture:} Designed a highly available infrastructure on Proxmox VE with \textbf{active replication} and failover on dedicated primary and fallback hardware.
+                \item \textbf{Stateful Services \& IAM:} Operated core infrastructure services such as \textbf{Samba AD DC (SSO)}, \textbf{NFS storage} for Kubernetes Persistent Volumes, PostgreSQL, and Nginx Reverse Proxy.
+                \item \textbf{Full-Stack CRM Development:} Designed and AI-assisted the implementation of a CRM software using \textbf{Java Spring}, \textbf{Python FastAPI (Vertex AI / Gemini)}, \textbf{PostgreSQL}, and \textbf{Next.js}.
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+
+    % =========================================================================
+    % PAGE 2: SKILLS, EDUCATION & LANGUAGES
+    % =========================================================================
+    \newpage 
+
+    \begin{cvsection}{Technical Skills}
+        \begin{cvsubsection}{}{}{}
+            \begin{itemize}
+                \item \textbf{Languages \& Frameworks:} Java (Spring Boot), Python (\textbf{FastAPI}, Pandas, Plotly), SQL, JavaScript / TypeScript, \textbf{Next.js}, Bash, PowerShell
+                \item \textbf{Infrastructure, Cloud \& DevOps:} Kubernetes (K3s/K8s), ArgoCD (GitOps), Proxmox VE, Docker / Compose, \textbf{Microsoft Azure}, Linux Administration (Debian/Ubuntu, Arch, RHEL/Fedora), ZFS, CI/CD
+                \item \textbf{Security \& Networking:} Identity Management (\textbf{Active Directory, LDAP, Samba AD DC}), Nginx Reverse Proxy, OPNsense Firewall, WireGuard / Tailscale VPN, NFS Storage, SSH, TLS, DNS
+                \item \textbf{Tools \& Quality:} Git (Gitea/GitHub/Bitbucket), Jira, Confluence, OpenProject, API Integration (REST, MS Graph, SAP), JUnit 5, Mockito, SonarQube, Checkstyle
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+
+    \vspace{0.25cm}
+
+    \begin{cvsection}{Education}
+        \begin{cvsubsection}{B.Sc. Computer Science}{HHU Düsseldorf}{exp. Spring 2027}
+            \begin{itemize}
+                \item Current GPA: \textbf{2.4} (148 ECTS)
+                \item \textbf{Focus Areas:} Software Engineering (Java/C), Databases (SQL/NoSQL)
+                \item \textbf{Special Achievements:} Programming (Grade: 1.0), Databases: Advanced Concepts (Grade: 1.0)
+                \item \textbf{Electives:} Distributed Systems, Operating Systems, Databases \& NoSQL
+            \end{itemize}
+        \end{cvsubsection}
+        
+        \vspace{0.15cm}
+        
+        \begin{cvsubsection}{Voluntary Military Service}{German Armed Forces (Bundeswehr)}{02/2021 -- 06/2021}
+        \end{cvsubsection}
+        
+        \vspace{0.15cm}
+        
+        \begin{cvsubsection}{General University Entrance Qualification}{Elly-Heuss-Knapp-Gymnasium Duisburg}{2020}
+        \end{cvsubsection}
+    \end{cvsection}
+
+    \vspace{0.25cm}
+
+    \begin{cvsection}{Languages}
+        \begin{cvsubsection}{}{}{}     
+            \begin{itemize}
+                \item German (Native)
+                \item English (Fluent)
+                \item Turkish (Fluent)
+                \item Japanese (Pre-intermediate)
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+    
+\end{document}
