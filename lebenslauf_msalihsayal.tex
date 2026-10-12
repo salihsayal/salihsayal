@@ -1,0 +1,142 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{setspace}
+\setstretch{1.22} % Erhöhter Zeilenabstand für gleichmäßigen, harmonischen Textfluss
+
+% Customize hyperlink appearance
+\hypersetup{
+    colorlinks=true,    % Enable colored links
+    linkcolor=blue,     % Color for internal links
+    urlcolor=blue,      % Color for external links (URLs)
+    citecolor=blue      % Color for citations
+}
+
+% Set applicant's personal data for header (Public Version)
+\name{M. Salih Sayal}
+\address{Duisburg, Deutschland \linebreak muhammet.salih.sayal@hotmail.com}
+\contacts{github.com/\href{https://github.com/salihsayal}{salihsayal} \linebreak \href{https://www.linkedin.com/in/muhammet-salih-sayal-327565206}{LinkedIn Profil}}
+
+\begin{document}
+    
+    % Print the header
+    \makeheader
+    
+    % =========================================================================
+    % SEITE 1: PRAXIS & SYSTEMERFAHRUNG
+    % =========================================================================
+    
+    \begin{cvsection}{Berufserfahrung}
+        \begin{cvsubsection}{IT-Engineer Automation}{Everllence (ehem. MAN ES)}{06/2025 -- 09/2026} 
+            \begin{itemize}
+                \item \textbf{Data Engineering \& ETL:} Entwicklung einer \textbf{Docker-basierten Python-Pipeline} zur Automatisierung komplexer Abrechnungsworkflows (PostgreSQL) inkl. \textbf{Active Directory (LDAP)}-Synchronisation
+                \item \textbf{Backend-Entwicklung:} Konzeption und Implementierung einer \textbf{REST-API} mit \textbf{Java Spring Boot} zur nahtlosen Anbindung an \textbf{SAP-Systeme}
+                \item \textbf{System-Integration:} Entwicklung spezialisierter \textbf{Wrapper-Skripte} in Python zur Orchestrierung der Interkommunikation heterogener Software-Systeme
+                \item \textbf{Cloud Automation \& Reporting:} Betrieb von Workloads auf \textbf{Microsoft Azure} (VMs, Entra ID) sowie automatisiertes Daten-Reporting via \textbf{Microsoft Graph API} (OAuth2) und Plotly
+                \item \textbf{Disaster Recovery \& Scripting:} Implementierung automatisierter \textbf{Backup-/Restore-Prozesse (SFTP/Rsync)} in Linux-Serverumgebungen sowie Refactoring von \textbf{Bash-Skripten}
+            \end{itemize}
+        \end{cvsubsection}
+        
+        \vspace{0.15cm}
+        
+        \begin{cvsubsection}{Software Engineer}{rola Security Solutions GmbH}{10/2023 -- 04/2025}
+            \begin{itemize}
+                \item \textbf{DevOps \& Troubleshooting:} \textbf{Fehleranalyse} beim Systemstart und Automatisierung von Konfigurationseinspielungen im Linux-Umfeld
+                \item \textbf{Data Engineering:} Entwicklung \textbf{Java-basierter Analyse-Tools} zur automatisierten Auswertung komplexer System-Fehlerprotokolle
+                \item \textbf{Software Quality Assurance:} Sicherstellung hoher Qualitätsstandards durch die Pflege von \textbf{Checkstyle-Regeln} und Umsetzung von \textbf{Sonar-Vorschlägen} (Clean Code)
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+
+    \vspace{0.2cm}
+
+    \begin{cvsection}{Ausgewählte Projekte}
+        \begin{cvsubsection}{Infrastruktur- \& Cloud-Projekt}{Jobentra}{07/2026 -- 08/2026}
+            \begin{itemize}
+                \item \textbf{Kubernetes Cluster \& GitOps:} Setup und Administration eines stateless \textbf{3-Node-Kubernetes-Clusters} auf Ubuntu Server für Microservices inklusive \textbf{GitOps-Pipelines} via \textbf{ArgoCD}, Gitea und CI/CD-Runnern
+                \item \textbf{Proxmox VE \& HA-Architektur:} Konzeption einer hochverfügbaren Infrastruktur auf Proxmox VE mit \textbf{aktiver Replikation} und Ausfallsicherheit auf dedizierter Primär- und Fallback-Hardware
+                \item \textbf{Stateful Services \& IAM:} Betrieb zentraler Infrastruktur-Dienste wie \textbf{Samba AD DC (SSO)}, \textbf{NFS-Storage} für Kubernetes Persistent Volumes, PostgreSQL und Nginx Reverse Proxy
+                \item \textbf{Full-Stack CRM-Entwicklung:} Konzeption und KI-gestützte Implementierung einer CRM-Software mit \textbf{Java Spring}, \textbf{Python FastAPI (Vertex AI / Gemini)}, \textbf{PostgreSQL} und \textbf{Next.js}
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+
+    % =========================================================================
+    % SEITE 2: SKILLS, BILDUNG & SPRACHEN
+    % =========================================================================
+    \newpage 
+
+    \begin{cvsection}{Technische Erfahrung}
+        \begin{cvsubsection}{}{}{}
+            \begin{itemize}
+                \item \textbf{Sprachen \& Frameworks:} Java (Spring Boot), Python (\textbf{FastAPI}, Pandas, Plotly), SQL, JavaScript / TypeScript, \textbf{Next.js}, Bash, PowerShell
+                \item \textbf{Infrastruktur, Cloud \& DevOps:} Kubernetes (K3s/K8s), ArgoCD (GitOps), Proxmox VE, Docker / Compose, \textbf{Microsoft Azure}, Linux-Administration (Debian/Ubuntu, Arch, RHEL/Fedora), ZFS, CI/CD
+                \item \textbf{Security \& Networking:} Identity Management (\textbf{Active Directory, LDAP, Samba AD DC}), Nginx Reverse Proxy, OPNsense Firewall, WireGuard / Tailscale VPN, NFS Storage, SSH, TLS, DNS
+                \item \textbf{Tools \& Quality:} Git (Gitea/GitHub/Bitbucket), Jira, Confluence, OpenProject, API-Integration (REST, MS Graph, SAP), JUnit 5, Mockito, SonarQube, Checkstyle
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+
+    \vspace{0.25cm}
+
+    \begin{cvsection}{Bildungsweg}
+        \begin{cvsubsection}{Informatik (B.Sc.)}{HHU Düsseldorf}{vorauss. Frühjahr 2027}
+            \begin{itemize}
+                \item Aktueller Notendurchschnitt: \textbf{2,4} (148 ECTS)
+                \item \textbf{Studienschwerpunkte:} Softwareentwicklung (Java/C), Datenbanken (SQL/NoSQL)
+                \item \textbf{Besondere Leistungen:} Programmierung (Note: 1,0), Datenbanken: Weiterführende Konzepte (Note: 1,0)
+                \item \textbf{Wahlvertiefung:} Verteilte Systeme, Betriebssysteme, Datenbanken \& NoSQL
+            \end{itemize}
+        \end{cvsubsection}
+        
+        \vspace{0.15cm}
+        
+        \begin{cvsubsection}{Freiwilliger Wehrdienst}{Bundeswehr}{02/2021 -- 06/2021}
+        \end{cvsubsection}
+        
+        \vspace{0.15cm}
+        
+        \begin{cvsubsection}{Allgemeine Hochschulreife}{Elly-Heuss-Knapp-Gymnasium Duisburg}{2020}
+        \end{cvsubsection}
+    \end{cvsection}
+
+    \vspace{0.25cm}
+
+    \begin{cvsection}{Sprachkenntnisse}
+        \begin{cvsubsection}{}{}{}     
+            \begin{itemize}
+                \item Deutsch (Muttersprache)
+                \item Englisch (fließend)
+                \item Türkisch (fließend)
+                \item Japanisch (fortgeschrittene Grundkenntnisse)
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+    
+\end{document}
