@@ -1,16 +1,18 @@
 # M. Salih Sayal
-**Cloud & DevOps Engineer** · Duisburg, Germany  
-[LinkedIn](https://www.linkedin.com/in/salihsayal) · [Email](mailto:muhammet.salih.sayal@hotmail.com)· [Resume (PDF)](resume_msalihsayal.pdf)
 
-Infrastructure and automation engineer focused on enterprise Linux environments, resilient container orchestration, and practical pipeline automation. Experienced in bare-metal hypervisors (Proxmox VE), stateless Kubernetes deployments (K3s, GitOps), and Python/Bash-driven systems integration.
+**Cloud & Systems Engineer** · Duisburg, Germany  
+[LinkedIn](https://www.linkedin.com/in/salihsayal) · [Email](mailto:muhammet.salih.sayal@hotmail.com) · [Resume (PDF)](resume_msalihsayal.pdf)
+
+Infrastructure and automation engineer focused on enterprise Linux environments, robust systems engineering, and practical pipeline automation. Experienced in bare-metal hypervisors (Proxmox VE), containerized architectures (Docker/Compose, Kubernetes), and Python/Bash-driven systems integration.
 
 ---
 
 ### 🛠️ Core Focus & Technologies
+
 - **Languages & Frameworks:** Java (Spring Boot), Python (FastAPI, Pandas, Automation), SQL, JavaScript / TypeScript, Next.js, Bash, PowerShell
-- **Infrastructure, Cloud & DevOps:** Linux Administration (Debian/Ubuntu, RHEL), Kubernetes (K3s/K8s), ArgoCD (GitOps), Proxmox VE, Docker / Compose, ZFS, CI/CD Pipelines, High Availability / Replication
+- **Infrastructure & Systems:** Linux Administration (Debian/Ubuntu, RHEL), Proxmox VE, Docker / Compose, ZFS, High Availability / Replication, Kubernetes (K3s/K8s)
 - **Security & Networking:** Identity Management (Samba AD DC), Nginx Reverse Proxy, OPNsense Firewall, WireGuard / Tailscale VPN, NFS Storage, SSH, TLS, DNS
-- **Tools & Quality:** Git (Gitea/GitHub/Bitbucket), Jira, Confluence, SAP-API-Integration, Dev Containers, JUnit 5, Mockito, SonarQube, Checkstyle
+- **Tools & Quality:** Git (Gitea/GitHub/Bitbucket), Jira, Confluence, SAP API Integration, Dev Containers, JUnit 5, Mockito, SonarQube, Checkstyle
 
 ---
 
@@ -26,7 +28,7 @@ Highly available infrastructure and stateless 3-Node-Kubernetes-Cluster for Jobe
 Containerized recruitment CRM platform featuring a decoupled, 4-tier microservice architecture.
 - **Architectural Separation:** Strict hub-and-spoke design where Java Spring Boot acts as the sole authenticated gateway to PostgreSQL. Frontend (Next.js) and AI Service (FastAPI) are fully isolated from direct database access.
 - **AI & Document Pipeline:** FastAPI-driven document generation and applicant profile synthesis using Google Vertex AI / Gemini to process candidate CVs.
-- **DevOps & Portability:** Fully containerized multi-container setup via Docker Compose and declarative Kubernetes deployment manifests.
+- **Portability:** Fully containerized multi-container setup via Docker Compose and declarative deployment manifests.
 
 #### [HPC Resource & Cost Aggregator](https://github.com/salihsayal/hpc-cost-calculation)
 Containerized 3-stage ETL (Extract, Transform, Load) and reporting pipeline for heterogeneous compute environments.
@@ -37,5 +39,5 @@ Containerized 3-stage ETL (Extract, Transform, Load) and reporting pipeline for 
 
 ---
 
-*Looking for roles in Cloud & DevOps Engineering, Platform Infrastructure, and Automation.*
+*Looking for roles in Systems Engineering, Platform Infrastructure, and Automation.*  
 📄 **[Download my full CV (PDF)](resume_msalihsayal.pdf)**
