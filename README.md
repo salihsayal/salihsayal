@@ -18,11 +18,11 @@ Infrastructure and automation engineer focused on enterprise Linux environments,
 
 ### 🚀 Featured Systems & Projects
 
-#### [Jobentra – Hybrid Infrastructure Architecture](https://github.com/salihsayal/jobentra-infrastructure)
-Highly available infrastructure and stateless 3-Node-Kubernetes-Cluster for Jobentra, a recruitment and staffing agency.
-- **Key Concepts:** Decoupled stateless compute (microservices) from stateful storage via NFS, PostgreSQL, and ZFS.
+#### [Jobentra – On-Premise Bare-Metal Infrastructure Architecture](https://github.com/salihsayal/jobentra-infrastructure)
+Highly available, self-hosted bare-metal infrastructure and stateless 3-Node-Kubernetes-Cluster for Jobentra, a recruitment and staffing agency.
+- **Key Concepts:** Decoupled stateless compute (microservices) from stateful storage via NFS, PostgreSQL, and ZFS running across dedicated Proxmox VE nodes.
 - **GitOps Deployment:** Automated CI/CD pipelines and rolling updates via ArgoCD connected to a self-hosted Gitea instance.
-- **High Availability:** Active replication and failover architecture across dedicated Proxmox VE hardware nodes.
+- **High Availability:** Active application-level replication (PostgreSQL, Keepalived, Samba AD DC) across dedicated hardware nodes.
 
 #### [Jobentra CRM – Multi-Service Platform](https://github.com/salihsayal/jobentra-crm)
 Containerized recruitment CRM platform featuring a decoupled, 4-tier microservice architecture.
